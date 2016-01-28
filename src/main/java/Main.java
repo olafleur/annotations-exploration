@@ -1,9 +1,11 @@
-/**
- * Created by olivierlafleur on 2016-01-27.
- */
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+
 public class Main {
     public static void main(String[] args) {
-        BillingService billingService = new BillingService(new PaypalProcessor(), new DatabaseLog());
+        Injector injector = Guice.createInjector(new BillingModule());
+
+        BillingService billingService = injector.getInstance(BillingService.class);
 
         billingService.chargeOrder();
     }

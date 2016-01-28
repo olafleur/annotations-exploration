@@ -1,10 +1,10 @@
-/**
- * Created by olivierlafleur on 2016-01-27.
- */
+import javax.inject.Inject;
+
 public class BillingService {
     private final CreditCardProcessor processor;
     private final TransactionLog transactionLog;
 
+    @Inject
     BillingService(CreditCardProcessor processor,
                    TransactionLog transactionLog) {
         this.processor = processor;

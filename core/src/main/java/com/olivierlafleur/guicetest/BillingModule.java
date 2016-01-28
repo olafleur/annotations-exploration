@@ -1,3 +1,5 @@
+package com.olivierlafleur.guicetest;
+
 import com.google.inject.AbstractModule;
 
 public class BillingModule extends AbstractModule {

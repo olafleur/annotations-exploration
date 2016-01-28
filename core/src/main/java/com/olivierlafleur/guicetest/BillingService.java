@@ -1,5 +1,8 @@
+package com.olivierlafleur.guicetest;
+
 import javax.inject.Inject;
 
+@Patate
 public class BillingService {
     private final CreditCardProcessor processor;
     private final TransactionLog transactionLog;

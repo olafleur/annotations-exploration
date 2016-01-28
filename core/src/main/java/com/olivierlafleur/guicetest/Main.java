@@ -1,3 +1,5 @@
+package com.olivierlafleur.guicetest;
+
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 

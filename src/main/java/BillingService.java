@@ -13,6 +13,7 @@ public class BillingService {
 
     public boolean chargeOrder() {
         //Use the two classes
+        System.out.println("I charge the order");
         return true;
     }
 }
